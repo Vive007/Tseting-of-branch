@@ -1,0 +1,25 @@
+{% load static %}
+<!-- ======= Navbar ======= -->
+<nav id="main-nav">
+  <div class="row">
+    <div class="container">
+      <div class="logo">
+        <a href="{% url 'home' %}"
+          ><img src="{% static 'assets/img/WKC Logo White.png' %}" alt="logo"
+        /></a>
+      </div>
+      <div class="responsive">
+        <i data-icon="m" class="ion-navicon-round"></i>
+      </div>
+      <ul class="nav-menu list-unstyled">
+        <li><a href="{% url 'home' %}" class="smoothScroll">Home</a></li>
+        <li>
+          <a href="{% url 'memories' %}" class="smoothScroll">Memories</a>
+        </li>
+        <li><a href="{% url 'moments' %}" class="smoothScroll">Moments</a></li>
+        <li><a href="https://drive.google.com/file/d/1SY88ERwtjPb9Es6EbignW4nEdYA-CvdM/view?usp=sharing" class="smoothScroll">Brochure</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
